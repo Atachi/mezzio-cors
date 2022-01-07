@@ -8,7 +8,7 @@ use Mezzio\Cors\Exception\AbstractInvalidArgumentException;
 
 final class InvalidConfigurationException extends AbstractInvalidArgumentException
 {
-    private function __construct(string $message)
+    public function __construct(string $message)
     {
         parent::__construct($message);
     }

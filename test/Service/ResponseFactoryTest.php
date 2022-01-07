@@ -77,7 +77,7 @@ final class ResponseFactoryTest extends TestCase
                 ['Access-Control-Allow-Origin', $origin],
                 ['Access-Control-Allow-Methods', implode(', ', $methods)],
                 ['Access-Control-Allow-Headers', implode(', ', $headers)],
-                ['Access-Control-Max-Age', 0],
+                ['Access-Control-Max-Age', 0]
             )
             ->willReturnSelf();
 
@@ -130,7 +130,7 @@ final class ResponseFactoryTest extends TestCase
                 ['Access-Control-Allow-Methods', implode(', ', $methods)],
                 ['Access-Control-Allow-Headers', implode(', ', $headers)],
                 ['Access-Control-Max-Age', 0],
-                ['Access-Control-Allow-Credentials', 'true'],
+                ['Access-Control-Allow-Credentials', 'true']
             )
             ->willReturnSelf();
 

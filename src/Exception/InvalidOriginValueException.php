@@ -11,7 +11,7 @@ use function sprintf;
 
 final class InvalidOriginValueException extends RuntimeException implements ExceptionInterface
 {
-    private function __construct(string $message, ?Throwable $previous = null)
+    public function __construct(string $message, ?Throwable $previous = null)
     {
         parent::__construct($message, 0, $previous);
     }
